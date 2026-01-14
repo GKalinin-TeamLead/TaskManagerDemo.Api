@@ -1,0 +1,31 @@
+TaskManagerDemo/
+├── TaskManagerDemo.sln
+├── TaskManagerDemo.API/
+│   ├── wwwroot/
+│   │   └── frontend/
+│   │       ├── src/
+│   │       │   ├── app/
+│   │       │   │   ├── services/
+│   │       │   │   └── components/
+│   │       │   └── environments/
+│   │       └── package.json
+│   │       
+│   ├── Controllers/
+│   ├── Helpers/
+│   ├── Program.cs
+│   ├── appsettings.json
+│   └── TaskManagerDemo.API.csproj
+├── TaskManagerDemo.Core/
+│   ├── Entities/
+│   ├── Interfaces/
+│   ├── Services/
+│   └── TaskManagerDemo.Core.csproj
+├── TaskManagerDemo.Data/
+│   ├── Migrations/
+│   ├── Repositories/
+│   ├── Configuration/
+│   └── TaskManagerDemo.Data.csproj
+└── TaskManagerDemo.Shared/
+	├── Dtos/
+	├── Enums/
+	└── TaskManagerDemo.Shared.csproj
