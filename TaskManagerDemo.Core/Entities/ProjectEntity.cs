@@ -19,5 +19,4 @@ public class ProjectEntity
     public DateTime? Deadline { get; set; }
     public int TeamSize { get; set; }
 
-    public virtual ICollection<TaskEntity> Tasks { get; set; }
 }

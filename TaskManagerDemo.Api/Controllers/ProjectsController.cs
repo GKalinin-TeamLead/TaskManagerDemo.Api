@@ -27,19 +27,6 @@ public class ProjectsController(IProjectService projectService) : ControllerBase
         return Ok(project);
     }
 
-    [HttpGet("active")]
-    public async Task<IActionResult> GetActiveProjects()
-    {
-        var projects = await _projectService.GetActiveProjectsAsync();
-        return Ok(projects);
-    }
-
-    [HttpGet("client/{clientName}")]
-    public async Task<IActionResult> GetByClient(string clientName)
-    {
-        var projects = await _projectService.GetProjectsByClientAsync(clientName);
-        return Ok(projects);
-    }
 
     [HttpGet("stats")]
     public async Task<IActionResult> GetStats()

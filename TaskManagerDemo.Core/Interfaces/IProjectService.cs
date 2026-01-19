@@ -3,8 +3,6 @@ namespace TaskManagerDemo.Core.Interfaces;
 
 public interface IProjectService
 {
-    Task<IEnumerable<ProjectDto>> GetActiveProjectsAsync();
     Task<IEnumerable<ProjectDto>> GetAllProjectsAsync();
     Task<ProjectDto> GetProjectByIdAsync(int id);
-    Task<IEnumerable<ProjectDto>> GetProjectsByClientAsync(string clientName);
 }

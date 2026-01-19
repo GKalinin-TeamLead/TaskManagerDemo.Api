@@ -6,10 +6,13 @@ namespace TaskManagerDemo.Data.Repositories;
 
 public class ProjectRepository(AppDbContext dbContext) : EfRepository<ProjectEntity>(dbContext), IProjectRepository
 {
-    public async Task<ProjectEntity> GetProjectWithTasksAsync(int id)
+    public IEnumerable<ProjectEntity> GetAllProjects()
     {
-        var temp = _dbContext.Projects;
-        return await temp.Include(proj => proj.Tasks).FirstOrDefaultAsync(p => p.Id == id);
+        return  dbContext.Projects.ToList();
+    }
 
+    public ProjectEntity GetProjectWithTasksAsync(int id)
+    {
+        throw new NotImplementedException();
     }
 }
